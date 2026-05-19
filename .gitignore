@@ -1,0 +1,99 @@
+# ==============================
+# Blender Project .gitignore
+# ==============================
+
+# --- Blender Auto-save & Temp Files ---
+*.blend1
+*.blend2
+*.blend3
+*.blend4
+*.blend5
+*.blend6
+*.blend7
+*.blend8
+*.blend9
+/tmp/
+
+# --- Blender Cache & Bake Data ---
+blender_cache/
+__pycache__/
+*.pyc
+*.pyo
+
+# --- Render Output ---
+renders/
+output/
+/render/
+*.png
+*.jpg
+*.jpeg
+*.exr
+*.hdr
+*.tiff
+*.tif
+*.bmp
+*.tga
+
+# Kecuali texture/reference image di folder khusus
+!textures/**/*.png
+!textures/**/*.jpg
+!textures/**/*.jpeg
+!textures/**/*.tiff
+!textures/**/*.tga
+!reference/**/*.png
+!reference/**/*.jpg
+!reference/**/*.jpeg
+
+# --- Video Output ---
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# --- Simulation Cache ---
+cache/
+blendcache_*/
+*.bphys
+*.pc2
+*.mdd
+
+# --- Fluid Simulation ---
+fluid_data_*/
+fluidsimulation_*/
+
+# --- Sculpt / Multires Cache ---
+*.bake
+
+# --- External Dependencies / Libraries ---
+lib/
+extern/
+
+# --- Asset Libraries (kalau besar, track manual) ---
+# assets/
+
+# --- Linked Libraries Temp ---
+*.blend.lock
+
+# --- Backup & OS Files ---
+*.bak
+*.backup
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- IDE / Editor Config ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- Log Files ---
+*.log
+logs/
+
+# --- Node / Python Build (kalau ada tools tambahan) ---
+node_modules/
+venv/
+.env
